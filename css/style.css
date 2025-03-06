@@ -3,15 +3,12 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* background-color: rgba(20, 20, 20, 1); */
     color: white;
 background-image: url("../img/bg.jpg");
 background-size: cover;
-    background-position: center; /* Центрируем картинку */
-
+    background-position: center;
   }
   
-  /* Шапка */
   header {
     background-color: black;
     color: white;
@@ -29,117 +26,4 @@ background-size: cover;
     background-color: rgba(0, 0, 0, 0.6); /* Полупрозрачный чёрный фон для контента */
     border-radius: 10px; /* Скруглённые углы */
     margin: 20px;
-  }
-  
-  section {
-    margin-bottom: 40px;
-  }
-  
-  /* Контейнер для картинки и информации */
-  .image-content {
-    display: flex;
-    align-items: center;
-    gap: 100px; /* Расстояние между картинкой и текстом */
-  }
-  
-  /* Картинка */
-  .image {
-    width: 500px; /* Размер картинки */
-    height: auto;
-    border-radius: 10px; /* Скруглённые углы */
-  }
-  
-  /* Информация */
-  .image-info {
-    max-width: 400px;
-  }
-  
-  .image-info h3 {
-    margin: 0;
-    font-size: 24px;
-  }
-  
-  .image-info p {
-    margin: 10px 0 0;
-    font-size: 16px;
-    line-height: 1.5;
-  }
-  /* Контейнер для музыки */
-  .audio-container {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-  }
-  
-  .audio-content {
-    display: flex;
-    align-items: center;
-    gap: 100px; /* Расстояние между кнопкой и текстом */
-  }
-  
-  /* Кнопка воспроизведения */
-  #playButton {
-    background: none;
-    border: none;
-    cursor: pointer;
-    padding: 0;
-  }
-  
-  #playButton img {
-    width: 500px; /* Увеличиваем размер изображения */
-    height: auto;
-  }
-  
-  /* Текст с информацией */
-  .audio-info {
-    max-width: 400px;
-  }
-  
-  .audio-info h3 {
-    margin: 0;
-    font-size: 24px;
-  }
-  
-  .audio-info p {
-    margin: 10px 0 0;
-    font-size: 16px;
-    line-height: 1.5;
-  }
-  
-  /* Видео-контейнер */
-  .video-container {
-    position: relative;
-    width: 100%;
-    padding-bottom: 56.25%; /* Соотношение сторон 16:9 */
-    height: 0;
-  }
-  
-  .video-container iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-  }
-  
-  /* Адаптивность */
-  @media (max-width: 768px) {
-    header h1 {
-      font-size: 24px;
-    }
-  
-    .audio-content {
-      flex-direction: column; /* На мобильных кнопка и текст друг под другом */
-      align-items: flex-start;
-    }
-  
-    #playButton img {
-      width: 120px; /* Уменьшаем размер кнопки на мобильных */
-    }
-  }
-  
-  @media (max-width: 480px) {
-    header h1 {
-      font-size: 20px;
-    }
   }
